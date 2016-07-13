@@ -8,4 +8,11 @@ describe('Tests ::: ', function() {
      assert.equal('word word', result);
      done();
   });
+
+    it('should contain only one line break', function(done) {
+     var result = wordwrap('word word', 9);
+     assert.equal('word\nword', result);
+     done();
+  });
+
 });
